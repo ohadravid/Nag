@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EACFA62207F9AAD0061038A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA61207F9AAD0061038A /* AppDelegate.swift */; };
+		7EACFA64207F9AAD0061038A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA63207F9AAD0061038A /* ViewController.swift */; };
+		7EACFA67207F9AAD0061038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA65207F9AAD0061038A /* Main.storyboard */; };
+		7EACFA69207F9AAF0061038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA68207F9AAF0061038A /* Assets.xcassets */; };
+		7EACFA6C207F9AAF0061038A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA6A207F9AAF0061038A /* LaunchScreen.storyboard */; };
+		7EACFA77207F9AAF0061038A /* NagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA76207F9AAF0061038A /* NagTests.swift */; };
+		7EACFA82207F9AAF0061038A /* NagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA81207F9AAF0061038A /* NagUITests.swift */; };
+		7EACFA87207F9AAF0061038A /* Nag WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7EACFA86207F9AAF0061038A /* Nag WatchKit App.app */; };
+		7EACFA8D207F9AAF0061038A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA8B207F9AAF0061038A /* Interface.storyboard */; };
+		7EACFA8F207F9AB00061038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA8E207F9AB00061038A /* Assets.xcassets */; };
+		7EACFA96207F9AB00061038A /* Nag WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EACFA95207F9AB00061038A /* Nag WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EACFA9B207F9AB00061038A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA9A207F9AB00061038A /* InterfaceController.swift */; };
+		7EACFA9D207F9AB00061038A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA9C207F9AB00061038A /* ExtensionDelegate.swift */; };
+		7EACFA9F207F9AB00061038A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA9E207F9AB00061038A /* NotificationController.swift */; };
+		7EACFAA1207F9AB00061038A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFAA0207F9AB00061038A /* ComplicationController.swift */; };
+		7EACFAA3207F9AB00061038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFAA2207F9AB00061038A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EACFA73207F9AAF0061038A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EACFA56207F9AAD0061038A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EACFA5D207F9AAD0061038A;
+			remoteInfo = Nag;
+		};
+		7EACFA7E207F9AAF0061038A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EACFA56207F9AAD0061038A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EACFA5D207F9AAD0061038A;
+			remoteInfo = Nag;
+		};
+		7EACFA88207F9AAF0061038A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EACFA56207F9AAD0061038A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EACFA85207F9AAF0061038A;
+			remoteInfo = "Nag WatchKit App";
+		};
+		7EACFA97207F9AB00061038A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EACFA56207F9AAD0061038A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EACFA94207F9AB00061038A;
+			remoteInfo = "Nag WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EACFAAB207F9AB00061038A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EACFA96207F9AB00061038A /* Nag WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFAAF207F9AB00061038A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7EACFA87207F9AAF0061038A /* Nag WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7EACFA5E207F9AAD0061038A /* Nag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EACFA61207F9AAD0061038A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EACFA63207F9AAD0061038A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EACFA66207F9AAD0061038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EACFA68207F9AAF0061038A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EACFA6B207F9AAF0061038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EACFA6D207F9AAF0061038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EACFA72207F9AAF0061038A /* NagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EACFA76207F9AAF0061038A /* NagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagTests.swift; sourceTree = "<group>"; };
+		7EACFA78207F9AAF0061038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EACFA7D207F9AAF0061038A /* NagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EACFA81207F9AAF0061038A /* NagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagUITests.swift; sourceTree = "<group>"; };
+		7EACFA83207F9AAF0061038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EACFA86207F9AAF0061038A /* Nag WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nag WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EACFA8C207F9AAF0061038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7EACFA8E207F9AB00061038A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EACFA90207F9AB00061038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EACFA95207F9AB00061038A /* Nag WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Nag WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EACFA9A207F9AB00061038A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7EACFA9C207F9AB00061038A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7EACFA9E207F9AB00061038A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7EACFAA0207F9AB00061038A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7EACFAA2207F9AB00061038A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EACFAA4207F9AB00061038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EACFAA5207F9AB00061038A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EACFA5B207F9AAD0061038A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA6F207F9AAF0061038A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA7A207F9AAF0061038A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA92207F9AB00061038A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EACFA55207F9AAD0061038A = {
+			isa = PBXGroup;
+			children = (
+				7EACFA60207F9AAD0061038A /* Nag */,
+				7EACFA75207F9AAF0061038A /* NagTests */,
+				7EACFA80207F9AAF0061038A /* NagUITests */,
+				7EACFA8A207F9AAF0061038A /* Nag WatchKit App */,
+				7EACFA99207F9AB00061038A /* Nag WatchKit Extension */,
+				7EACFA5F207F9AAD0061038A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EACFA5F207F9AAD0061038A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EACFA5E207F9AAD0061038A /* Nag.app */,
+				7EACFA72207F9AAF0061038A /* NagTests.xctest */,
+				7EACFA7D207F9AAF0061038A /* NagUITests.xctest */,
+				7EACFA86207F9AAF0061038A /* Nag WatchKit App.app */,
+				7EACFA95207F9AB00061038A /* Nag WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EACFA60207F9AAD0061038A /* Nag */ = {
+			isa = PBXGroup;
+			children = (
+				7EACFA61207F9AAD0061038A /* AppDelegate.swift */,
+				7EACFA63207F9AAD0061038A /* ViewController.swift */,
+				7EACFA65207F9AAD0061038A /* Main.storyboard */,
+				7EACFA68207F9AAF0061038A /* Assets.xcassets */,
+				7EACFA6A207F9AAF0061038A /* LaunchScreen.storyboard */,
+				7EACFA6D207F9AAF0061038A /* Info.plist */,
+			);
+			path = Nag;
+			sourceTree = "<group>";
+		};
+		7EACFA75207F9AAF0061038A /* NagTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EACFA76207F9AAF0061038A /* NagTests.swift */,
+				7EACFA78207F9AAF0061038A /* Info.plist */,
+			);
+			path = NagTests;
+			sourceTree = "<group>";
+		};
+		7EACFA80207F9AAF0061038A /* NagUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EACFA81207F9AAF0061038A /* NagUITests.swift */,
+				7EACFA83207F9AAF0061038A /* Info.plist */,
+			);
+			path = NagUITests;
+			sourceTree = "<group>";
+		};
+		7EACFA8A207F9AAF0061038A /* Nag WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7EACFA8B207F9AAF0061038A /* Interface.storyboard */,
+				7EACFA8E207F9AB00061038A /* Assets.xcassets */,
+				7EACFA90207F9AB00061038A /* Info.plist */,
+			);
+			path = "Nag WatchKit App";
+			sourceTree = "<group>";
+		};
+		7EACFA99207F9AB00061038A /* Nag WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7EACFA9A207F9AB00061038A /* InterfaceController.swift */,
+				7EACFA9C207F9AB00061038A /* ExtensionDelegate.swift */,
+				7EACFA9E207F9AB00061038A /* NotificationController.swift */,
+				7EACFAA0207F9AB00061038A /* ComplicationController.swift */,
+				7EACFAA2207F9AB00061038A /* Assets.xcassets */,
+				7EACFAA4207F9AB00061038A /* Info.plist */,
+				7EACFAA5207F9AB00061038A /* PushNotificationPayload.apns */,
+			);
+			path = "Nag WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EACFA5D207F9AAD0061038A /* Nag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EACFAB0207F9AB00061038A /* Build configuration list for PBXNativeTarget "Nag" */;
+			buildPhases = (
+				7EACFA5A207F9AAD0061038A /* Sources */,
+				7EACFA5B207F9AAD0061038A /* Frameworks */,
+				7EACFA5C207F9AAD0061038A /* Resources */,
+				7EACFAAF207F9AB00061038A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EACFA89207F9AAF0061038A /* PBXTargetDependency */,
+			);
+			name = Nag;
+			productName = Nag;
+			productReference = 7EACFA5E207F9AAD0061038A /* Nag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EACFA71207F9AAF0061038A /* NagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EACFAB3207F9AB00061038A /* Build configuration list for PBXNativeTarget "NagTests" */;
+			buildPhases = (
+				7EACFA6E207F9AAF0061038A /* Sources */,
+				7EACFA6F207F9AAF0061038A /* Frameworks */,
+				7EACFA70207F9AAF0061038A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EACFA74207F9AAF0061038A /* PBXTargetDependency */,
+			);
+			name = NagTests;
+			productName = NagTests;
+			productReference = 7EACFA72207F9AAF0061038A /* NagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EACFA7C207F9AAF0061038A /* NagUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EACFAB6207F9AB00061038A /* Build configuration list for PBXNativeTarget "NagUITests" */;
+			buildPhases = (
+				7EACFA79207F9AAF0061038A /* Sources */,
+				7EACFA7A207F9AAF0061038A /* Frameworks */,
+				7EACFA7B207F9AAF0061038A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EACFA7F207F9AAF0061038A /* PBXTargetDependency */,
+			);
+			name = NagUITests;
+			productName = NagUITests;
+			productReference = 7EACFA7D207F9AAF0061038A /* NagUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7EACFA85207F9AAF0061038A /* Nag WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EACFAAC207F9AB00061038A /* Build configuration list for PBXNativeTarget "Nag WatchKit App" */;
+			buildPhases = (
+				7EACFA84207F9AAF0061038A /* Resources */,
+				7EACFAAB207F9AB00061038A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EACFA98207F9AB00061038A /* PBXTargetDependency */,
+			);
+			name = "Nag WatchKit App";
+			productName = "Nag WatchKit App";
+			productReference = 7EACFA86207F9AAF0061038A /* Nag WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7EACFA94207F9AB00061038A /* Nag WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EACFAA8207F9AB00061038A /* Build configuration list for PBXNativeTarget "Nag WatchKit Extension" */;
+			buildPhases = (
+				7EACFA91207F9AB00061038A /* Sources */,
+				7EACFA92207F9AB00061038A /* Frameworks */,
+				7EACFA93207F9AB00061038A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nag WatchKit Extension";
+			productName = "Nag WatchKit Extension";
+			productReference = 7EACFA95207F9AB00061038A /* Nag WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EACFA56207F9AAD0061038A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ravid Ventures";
+				TargetAttributes = {
+					7EACFA5D207F9AAD0061038A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					7EACFA71207F9AAF0061038A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7EACFA5D207F9AAD0061038A;
+					};
+					7EACFA7C207F9AAF0061038A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7EACFA5D207F9AAD0061038A;
+					};
+					7EACFA85207F9AAF0061038A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					7EACFA94207F9AB00061038A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 7EACFA59207F9AAD0061038A /* Build configuration list for PBXProject "Nag" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EACFA55207F9AAD0061038A;
+			productRefGroup = 7EACFA5F207F9AAD0061038A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EACFA5D207F9AAD0061038A /* Nag */,
+				7EACFA71207F9AAF0061038A /* NagTests */,
+				7EACFA7C207F9AAF0061038A /* NagUITests */,
+				7EACFA85207F9AAF0061038A /* Nag WatchKit App */,
+				7EACFA94207F9AB00061038A /* Nag WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EACFA5C207F9AAD0061038A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFA6C207F9AAF0061038A /* LaunchScreen.storyboard in Resources */,
+				7EACFA69207F9AAF0061038A /* Assets.xcassets in Resources */,
+				7EACFA67207F9AAD0061038A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA70207F9AAF0061038A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA7B207F9AAF0061038A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA84207F9AAF0061038A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFA8F207F9AB00061038A /* Assets.xcassets in Resources */,
+				7EACFA8D207F9AAF0061038A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA93207F9AB00061038A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFAA3207F9AB00061038A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EACFA5A207F9AAD0061038A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFA64207F9AAD0061038A /* ViewController.swift in Sources */,
+				7EACFA62207F9AAD0061038A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA6E207F9AAF0061038A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFA77207F9AAF0061038A /* NagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA79207F9AAF0061038A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFA82207F9AAF0061038A /* NagUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EACFA91207F9AB00061038A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACFA9F207F9AB00061038A /* NotificationController.swift in Sources */,
+				7EACFAA1207F9AB00061038A /* ComplicationController.swift in Sources */,
+				7EACFA9D207F9AB00061038A /* ExtensionDelegate.swift in Sources */,
+				7EACFA9B207F9AB00061038A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EACFA74207F9AAF0061038A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EACFA5D207F9AAD0061038A /* Nag */;
+			targetProxy = 7EACFA73207F9AAF0061038A /* PBXContainerItemProxy */;
+		};
+		7EACFA7F207F9AAF0061038A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EACFA5D207F9AAD0061038A /* Nag */;
+			targetProxy = 7EACFA7E207F9AAF0061038A /* PBXContainerItemProxy */;
+		};
+		7EACFA89207F9AAF0061038A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EACFA85207F9AAF0061038A /* Nag WatchKit App */;
+			targetProxy = 7EACFA88207F9AAF0061038A /* PBXContainerItemProxy */;
+		};
+		7EACFA98207F9AB00061038A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EACFA94207F9AB00061038A /* Nag WatchKit Extension */;
+			targetProxy = 7EACFA97207F9AB00061038A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EACFA65207F9AAD0061038A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EACFA66207F9AAD0061038A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EACFA6A207F9AAF0061038A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EACFA6B207F9AAF0061038A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7EACFA8B207F9AAF0061038A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EACFA8C207F9AAF0061038A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EACFAA6207F9AB00061038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EACFAA7207F9AB00061038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EACFAA9207F9AB00061038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nag WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		7EACFAAA207F9AB00061038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nag WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		7EACFAAD207F9AB00061038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Nag_WatchKit_Extension;
+				INFOPLIST_FILE = "Nag WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		7EACFAAE207F9AB00061038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Nag_WatchKit_Extension;
+				INFOPLIST_FILE = "Nag WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		7EACFAB1207F9AB00061038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Nag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EACFAB2207F9AB00061038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Nag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EACFAB4207F9AB00061038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nag.app/Nag";
+			};
+			name = Debug;
+		};
+		7EACFAB5207F9AB00061038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nag.app/Nag";
+			};
+			name = Release;
+		};
+		7EACFAB7207F9AB00061038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NagUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nag;
+			};
+			name = Debug;
+		};
+		7EACFAB8207F9AB00061038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NagUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nag;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EACFA59207F9AAD0061038A /* Build configuration list for PBXProject "Nag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EACFAA6207F9AB00061038A /* Debug */,
+				7EACFAA7207F9AB00061038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EACFAA8207F9AB00061038A /* Build configuration list for PBXNativeTarget "Nag WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EACFAA9207F9AB00061038A /* Debug */,
+				7EACFAAA207F9AB00061038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EACFAAC207F9AB00061038A /* Build configuration list for PBXNativeTarget "Nag WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EACFAAD207F9AB00061038A /* Debug */,
+				7EACFAAE207F9AB00061038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EACFAB0207F9AB00061038A /* Build configuration list for PBXNativeTarget "Nag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EACFAB1207F9AB00061038A /* Debug */,
+				7EACFAB2207F9AB00061038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EACFAB3207F9AB00061038A /* Build configuration list for PBXNativeTarget "NagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EACFAB4207F9AB00061038A /* Debug */,
+				7EACFAB5207F9AB00061038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EACFAB6207F9AB00061038A /* Build configuration list for PBXNativeTarget "NagUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EACFAB7207F9AB00061038A /* Debug */,
+				7EACFAB8207F9AB00061038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EACFA56207F9AAD0061038A /* Project object */;
+}
