@@ -10,6 +10,7 @@
 		7E2A342720811D6300B8BA40 /* NGTimersInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A342620811D6300B8BA40 /* NGTimersInterfaceController.swift */; };
 		7E2A34282081232E00B8BA40 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BE56207FA6160039B9D1 /* Timers.swift */; };
 		7E2A342E2081293A00B8BA40 /* NGTimerRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A342D2081293A00B8BA40 /* NGTimerRowController.swift */; };
+		7E2A343220812EF100B8BA40 /* NGSingleTimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A343120812EF100B8BA40 /* NGSingleTimerInterfaceController.swift */; };
 		7E45BE54207FA5860039B9D1 /* Timers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE53207FA5860039B9D1 /* Timers.json */; };
 		7E45BE55207FA5F40039B9D1 /* Timers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE53207FA5860039B9D1 /* Timers.json */; };
 		7E45BE57207FA6160039B9D1 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BE56207FA6160039B9D1 /* Timers.swift */; };
@@ -93,6 +94,7 @@
 /* Begin PBXFileReference section */
 		7E2A342620811D6300B8BA40 /* NGTimersInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTimersInterfaceController.swift; sourceTree = "<group>"; };
 		7E2A342D2081293A00B8BA40 /* NGTimerRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTimerRowController.swift; sourceTree = "<group>"; };
+		7E2A343120812EF100B8BA40 /* NGSingleTimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGSingleTimerInterfaceController.swift; sourceTree = "<group>"; };
 		7E45BE53207FA5860039B9D1 /* Timers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Timers.json; sourceTree = "<group>"; };
 		7E45BE56207FA6160039B9D1 /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
 		7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				7EACFAA5207F9AB00061038A /* PushNotificationPayload.apns */,
 				7E2A342620811D6300B8BA40 /* NGTimersInterfaceController.swift */,
 				7E2A342D2081293A00B8BA40 /* NGTimerRowController.swift */,
+				7E2A343120812EF100B8BA40 /* NGSingleTimerInterfaceController.swift */,
 			);
 			path = "Nag WatchKit Extension";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				7E2A342E2081293A00B8BA40 /* NGTimerRowController.swift in Sources */,
 				7EACFAA1207F9AB00061038A /* ComplicationController.swift in Sources */,
 				7E2A342720811D6300B8BA40 /* NGTimersInterfaceController.swift in Sources */,
+				7E2A343220812EF100B8BA40 /* NGSingleTimerInterfaceController.swift in Sources */,
 				7EACFA9D207F9AB00061038A /* ExtensionDelegate.swift in Sources */,
 				7E2A34282081232E00B8BA40 /* Timers.swift in Sources */,
 			);
