@@ -44,11 +44,11 @@
                                 <tableRow identifier="TimerRow" id="4Q1-sq-p4A" customClass="NGTimerRowController" customModule="Nag_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="4YK-Sy-SSz">
                                         <items>
-                                            <button width="1" alignment="left" title="Timer 0" id="xsx-K2-6wV"/>
+                                            <label alignment="center" verticalAlignment="center" text="Timer Name" id="SG4-DX-vnF"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="button" destination="xsx-K2-6wV" id="HL5-wK-3WN"/>
+                                        <outlet property="timerLabel" destination="SG4-DX-vnF" id="Kcz-DS-RcV"/>
                                     </connections>
                                 </tableRow>
                             </items>

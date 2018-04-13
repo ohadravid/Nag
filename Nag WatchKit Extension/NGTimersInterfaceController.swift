@@ -38,4 +38,8 @@ class NGTimersInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let timer = timers[rowIndex]
+        presentController(withName: "SingleTimer", context: timer)
+    }
 }

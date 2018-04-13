@@ -14,10 +14,27 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
     @IBOutlet var timerName: WKInterfaceLabel!
     @IBOutlet var timerTimeRemaining: WKInterfaceTimer!
     
+    var duration: TimeInterval = 0
+    
+    var timer: NGTimer? {
+        didSet {
+            guard let timer = timer else { return }
+            
+            timerName.setText(timer.title)
+            
+            duration = TimeInterval(timer.time)
+            
+            timerTimeRemaining.setDate(Date(timeIntervalSinceNow: duration ))
+        }
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        if let timer = context as? NGTimer {
+            self.timer = timer
+        }
     }
 
     override func willActivate() {

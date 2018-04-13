@@ -9,13 +9,13 @@
 import WatchKit
 
 class NGTimerRowController: NSObject {
-    @IBOutlet var button: WKInterfaceButton!
+    @IBOutlet var timerLabel: WKInterfaceLabel!
     
     var timer: NGTimer? {
         didSet {
             guard let timer = timer else { return }
 
-            button.setTitle(timer.title)
+            timerLabel.setText(timer.title)
         }
     }
 }
