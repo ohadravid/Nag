@@ -77,18 +77,23 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
     }
     
     var internalTimer : Timer?  //internal timer to keep track
-    var isPaused = false //flag to determine if it is paused or not
+    var isPaused = true //flag to determine if it is paused or not
     var elapsedTime : TimeInterval = 0.0 //time that has passed between pause/resume
     var startTime = Date()
     
     @IBAction func pauseResumePressed() {
         guard let timer = timer else { return }
         
-        //timer is paused. so unpause it and resume countdown
+        // timer is paused. so unpause it and resume countdown
         if isPaused {
             isPaused = false
-//            internalTimer = Timer.scheduledTimer(timeInterval: timer.duration - elapsedTime, target: self, selector: #selector(NGSingleTimerInterfaceController.timerDone), userInfo: nil, repeats: false)
-//
+            internalTimer = Timer.scheduledTimer(
+                timeInterval: timer.duration - elapsedTime,
+                target: self,
+                selector: #selector(NGSingleTimerInterfaceController.timerDone),
+                userInfo: nil, repeats: false
+            )
+
             timerTimeRemaining.setText("Running!")
             
             startTime = Date()
@@ -100,7 +105,7 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
             elapsedTime += paused.timeIntervalSince(startTime)
 
             // Stop the the internal timer.
-//            internalTimer!.invalidate()
+            internalTimer!.invalidate()
             
             timerTimeRemaining.setText("Paused!")
         }
