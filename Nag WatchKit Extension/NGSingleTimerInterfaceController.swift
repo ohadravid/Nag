@@ -82,6 +82,7 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
     var isPaused = true //flag to determine if it is paused or not
     var elapsedTime : TimeInterval = 0.0 //time that has passed between pause/resume
     var startTime = DateInRegion()
+    var lastRingMinute = -1
     
     let RUNNING_COLOR = UIColor(red:0.00, green:0.72, blue:1.00, alpha:1.0)
     let PAUSED_COLOR = UIColor(red:0.58, green:0.65, blue:0.65, alpha:1.0)
@@ -102,6 +103,7 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
             )
             
             startTime = DateInRegion()
+            lastRingMinute = -1
             
             updateTimerText()
             timerButtonBackground.setBackgroundColor(RUNNING_COLOR)
@@ -119,17 +121,31 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
         }
     }
     
+    
+    
     func updateTimerText() {
         guard let timer = timer else { return }
         elapsedTime = DateInRegion() - startTime
         
         let diff = (timer.duration - elapsedTime).in([.minute,.second])
         
-        if ((diff[.minute] ?? 0) < 0) || (diff[.second] ?? 0) < 0 {
+        var minute = diff[.minute] ?? 0
+        var second = diff[.second] ?? 0
+        
+        if (minute < 0) || second < 0 {
+            minute = abs(minute)
+            second = abs(second)
+            
+            // Bug: Will ring at -40s. Probably `Duration` problem..
+            if lastRingMinute < minute {
+                WKInterfaceDevice.current().play(WKHapticType.retry)
+                lastRingMinute = minute
+            }
+            
             timerButtonBackground.setBackgroundColor(OVERTIME_COLOR)
-            timerTimeRemaining.setText("-\(abs(diff[.minute] ?? 0))m \(abs(diff[.second] ?? 0))s")
+            timerTimeRemaining.setText("-\(minute)m \(second)s")
         } else {
-            timerTimeRemaining.setText("\( diff[.minute] ?? 0)m \(diff[.second] ?? 0)s")
+            timerTimeRemaining.setText("\(minute)m \(second)s")
         }
     }
     
