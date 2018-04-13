@@ -19,8 +19,8 @@ class NGTimer: NSObject {
     
     static func allTimers() -> [NGTimer] {
         return [
-            NGTimer(title: "Green Tea", duration: TimeInterval(3 * 60)),
-            NGTimer(title: "Black Tea", duration: TimeInterval(5 * 60)),
+            NGTimer(title: "Green Tea", duration: TimeInterval(3 * 1)),
+            NGTimer(title: "Black Tea", duration: TimeInterval(5 * 1)),
         ]
     }
 }

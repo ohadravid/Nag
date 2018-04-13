@@ -96,6 +96,7 @@
                     </items>
                     <connections>
                         <outlet property="timerButton" destination="wMk-cm-s0N" id="xyU-5A-xax"/>
+                        <outlet property="timerButtonBackground" destination="jNp-cD-ZcD" id="eMA-aR-oDm"/>
                         <outlet property="timerName" destination="mfM-XM-40a" id="YdV-zC-2mE"/>
                         <outlet property="timerTimeRemaining" destination="WuP-Zp-KCF" id="cZI-my-zUb"/>
                     </connections>
