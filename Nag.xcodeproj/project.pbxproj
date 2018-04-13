@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2A342720811D6300B8BA40 /* NGTimersInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A342620811D6300B8BA40 /* NGTimersInterfaceController.swift */; };
+		7E2A34282081232E00B8BA40 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BE56207FA6160039B9D1 /* Timers.swift */; };
+		7E2A342E2081293A00B8BA40 /* NGTimerRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A342D2081293A00B8BA40 /* NGTimerRowController.swift */; };
+		7E45BE54207FA5860039B9D1 /* Timers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE53207FA5860039B9D1 /* Timers.json */; };
+		7E45BE55207FA5F40039B9D1 /* Timers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE53207FA5860039B9D1 /* Timers.json */; };
+		7E45BE57207FA6160039B9D1 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BE56207FA6160039B9D1 /* Timers.swift */; };
+		7E45BE5C207FA8D70039B9D1 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */; };
+		7E45BE5D207FA8D70039B9D1 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */; };
+		7E45BE5E207FB35D0039B9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA68207F9AAF0061038A /* Assets.xcassets */; };
+		7E45BE5F207FB4130039B9D1 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */; };
 		7EACFA62207F9AAD0061038A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA61207F9AAD0061038A /* AppDelegate.swift */; };
 		7EACFA64207F9AAD0061038A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA63207F9AAD0061038A /* ViewController.swift */; };
 		7EACFA67207F9AAD0061038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA65207F9AAD0061038A /* Main.storyboard */; };
@@ -18,7 +28,6 @@
 		7EACFA8D207F9AAF0061038A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA8B207F9AAF0061038A /* Interface.storyboard */; };
 		7EACFA8F207F9AB00061038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA8E207F9AB00061038A /* Assets.xcassets */; };
 		7EACFA96207F9AB00061038A /* Nag WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EACFA95207F9AB00061038A /* Nag WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7EACFA9B207F9AB00061038A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA9A207F9AB00061038A /* InterfaceController.swift */; };
 		7EACFA9D207F9AB00061038A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA9C207F9AB00061038A /* ExtensionDelegate.swift */; };
 		7EACFA9F207F9AB00061038A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA9E207F9AB00061038A /* NotificationController.swift */; };
 		7EACFAA1207F9AB00061038A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFAA0207F9AB00061038A /* ComplicationController.swift */; };
@@ -82,6 +91,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E2A342620811D6300B8BA40 /* NGTimersInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTimersInterfaceController.swift; sourceTree = "<group>"; };
+		7E2A342D2081293A00B8BA40 /* NGTimerRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTimerRowController.swift; sourceTree = "<group>"; };
+		7E45BE53207FA5860039B9D1 /* Timers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Timers.json; sourceTree = "<group>"; };
+		7E45BE56207FA6160039B9D1 /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
+		7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
 		7EACFA5E207F9AAD0061038A /* Nag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EACFA61207F9AAD0061038A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EACFA63207F9AAD0061038A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +114,6 @@
 		7EACFA8E207F9AB00061038A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EACFA90207F9AB00061038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EACFA95207F9AB00061038A /* Nag WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Nag WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EACFA9A207F9AB00061038A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		7EACFA9C207F9AB00061038A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		7EACFA9E207F9AB00061038A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		7EACFAA0207F9AB00061038A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -141,9 +154,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E45BE52207FA55F0039B9D1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7E45BE53207FA5860039B9D1 /* Timers.json */,
+				7E45BE56207FA6160039B9D1 /* Timers.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		7EACFA55207F9AAD0061038A = {
 			isa = PBXGroup;
 			children = (
+				7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */,
+				7E45BE52207FA55F0039B9D1 /* Shared */,
 				7EACFA60207F9AAD0061038A /* Nag */,
 				7EACFA75207F9AAF0061038A /* NagTests */,
 				7EACFA80207F9AAF0061038A /* NagUITests */,
@@ -209,13 +233,14 @@
 		7EACFA99207F9AB00061038A /* Nag WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7EACFA9A207F9AB00061038A /* InterfaceController.swift */,
 				7EACFA9C207F9AB00061038A /* ExtensionDelegate.swift */,
 				7EACFA9E207F9AB00061038A /* NotificationController.swift */,
 				7EACFAA0207F9AB00061038A /* ComplicationController.swift */,
 				7EACFAA2207F9AB00061038A /* Assets.xcassets */,
 				7EACFAA4207F9AB00061038A /* Info.plist */,
 				7EACFAA5207F9AB00061038A /* PushNotificationPayload.apns */,
+				7E2A342620811D6300B8BA40 /* NGTimersInterfaceController.swift */,
+				7E2A342D2081293A00B8BA40 /* NGTimerRowController.swift */,
 			);
 			path = "Nag WatchKit Extension";
 			sourceTree = "<group>";
@@ -318,6 +343,7 @@
 		7EACFA56207F9AAD0061038A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NG;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ravid Ventures";
@@ -369,7 +395,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFA6C207F9AAF0061038A /* LaunchScreen.storyboard in Resources */,
+				7E45BE5C207FA8D70039B9D1 /* Logo@2x.png in Resources */,
 				7EACFA69207F9AAF0061038A /* Assets.xcassets in Resources */,
+				7E45BE54207FA5860039B9D1 /* Timers.json in Resources */,
 				7EACFA67207F9AAD0061038A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFA8F207F9AB00061038A /* Assets.xcassets in Resources */,
+				7E45BE5F207FB4130039B9D1 /* Logo@2x.png in Resources */,
 				7EACFA8D207F9AAF0061038A /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +431,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFAA3207F9AB00061038A /* Assets.xcassets in Resources */,
+				7E45BE5D207FA8D70039B9D1 /* Logo@2x.png in Resources */,
+				7E45BE5E207FB35D0039B9D1 /* Assets.xcassets in Resources */,
+				7E45BE55207FA5F40039B9D1 /* Timers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFA64207F9AAD0061038A /* ViewController.swift in Sources */,
+				7E45BE57207FA6160039B9D1 /* Timers.swift in Sources */,
 				7EACFA62207F9AAD0061038A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,9 +471,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFA9F207F9AB00061038A /* NotificationController.swift in Sources */,
+				7E2A342E2081293A00B8BA40 /* NGTimerRowController.swift in Sources */,
 				7EACFAA1207F9AB00061038A /* ComplicationController.swift in Sources */,
+				7E2A342720811D6300B8BA40 /* NGTimersInterfaceController.swift in Sources */,
 				7EACFA9D207F9AB00061038A /* ExtensionDelegate.swift in Sources */,
-				7EACFA9B207F9AB00061038A /* InterfaceController.swift in Sources */,
+				7E2A34282081232E00B8BA40 /* Timers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JTTKNW75MR;
 				INFOPLIST_FILE = Nag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,6 +747,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JTTKNW75MR;
 				INFOPLIST_FILE = Nag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
