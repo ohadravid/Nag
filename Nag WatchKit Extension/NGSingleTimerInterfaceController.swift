@@ -14,17 +14,12 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
     @IBOutlet var timerName: WKInterfaceLabel!
     @IBOutlet var timerTimeRemaining: WKInterfaceTimer!
     
-    var duration: TimeInterval = 0
-    
     var timer: NGTimer? {
         didSet {
             guard let timer = timer else { return }
             
             timerName.setText(timer.title)
-            
-            duration = TimeInterval(timer.time)
-            
-            timerTimeRemaining.setDate(Date(timeIntervalSinceNow: duration ))
+            timerTimeRemaining.setDate(Date(timeIntervalSinceNow: timer.duration + 1 ))
         }
     }
     

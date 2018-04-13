@@ -10,14 +10,17 @@ import Foundation
 
 class NGTimer: NSObject {
     var title: String
-    var time: Int32
+    var duration: TimeInterval
     
-    init(title: String, time: Int32) {
+    init(title: String, duration: TimeInterval) {
         self.title = title
-        self.time = time
+        self.duration = duration
     }
     
     static func allTimers() -> [NGTimer] {
-        return [NGTimer(title: "Black Tea", time: 3), NGTimer(title: "Green Tea", time: 5)]
+        return [
+            NGTimer(title: "Green Tea", duration: TimeInterval(3 * 60)),
+            NGTimer(title: "Black Tea", duration: TimeInterval(5 * 60)),
+        ]
     }
 }
