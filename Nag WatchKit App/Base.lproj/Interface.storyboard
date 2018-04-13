@@ -83,6 +83,9 @@
                                         </items>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
+                                    <connections>
+                                        <action selector="pauseResumePressed" destination="Zjq-I9-d6w" id="0lW-ED-84y"/>
+                                    </connections>
                                 </button>
                             </items>
                             <gestureRecognizers>
@@ -92,6 +95,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="timerButton" destination="wMk-cm-s0N" id="xyU-5A-xax"/>
                         <outlet property="timerName" destination="mfM-XM-40a" id="YdV-zC-2mE"/>
                         <outlet property="timerTimeRemaining" destination="WuP-Zp-KCF" id="cZI-my-zUb"/>
                     </connections>

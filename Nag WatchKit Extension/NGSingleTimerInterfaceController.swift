@@ -42,7 +42,8 @@ extension TimeInterval {
 class NGSingleTimerInterfaceController: WKInterfaceController {
     @IBOutlet var timerName: WKInterfaceLabel!
     @IBOutlet var timerTimeRemaining: WKInterfaceLabel!
-    
+    @IBOutlet var timerButton: WKInterfaceButton!
+
     var timer: NGTimer? {
         didSet {
             guard let timer = timer else { return }
@@ -71,4 +72,41 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func buttonClicked() {
+        pauseResumePressed()
+    }
+    
+    var internalTimer : Timer?  //internal timer to keep track
+    var isPaused = false //flag to determine if it is paused or not
+    var elapsedTime : TimeInterval = 0.0 //time that has passed between pause/resume
+    var startTime = Date()
+    
+    @IBAction func pauseResumePressed() {
+        guard let timer = timer else { return }
+        
+        //timer is paused. so unpause it and resume countdown
+        if isPaused {
+            isPaused = false
+//            internalTimer = Timer.scheduledTimer(timeInterval: timer.duration - elapsedTime, target: self, selector: #selector(NGSingleTimerInterfaceController.timerDone), userInfo: nil, repeats: false)
+//
+            timerTimeRemaining.setText("Running!")
+            
+            startTime = Date()
+        } else {
+            isPaused = true
+            
+            // Get how much time has passed before they paused it.
+            let paused = Date()
+            elapsedTime += paused.timeIntervalSince(startTime)
+
+            // Stop the the internal timer.
+//            internalTimer!.invalidate()
+            
+            timerTimeRemaining.setText("Paused!")
+        }
+    }
+    
+    @objc func timerDone(){
+        // Timer done counting down.
+    }
 }
