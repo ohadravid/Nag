@@ -15,10 +15,7 @@
 		7E45BE54207FA5860039B9D1 /* Timers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE53207FA5860039B9D1 /* Timers.json */; };
 		7E45BE55207FA5F40039B9D1 /* Timers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE53207FA5860039B9D1 /* Timers.json */; };
 		7E45BE57207FA6160039B9D1 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BE56207FA6160039B9D1 /* Timers.swift */; };
-		7E45BE5C207FA8D70039B9D1 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */; };
-		7E45BE5D207FA8D70039B9D1 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */; };
 		7E45BE5E207FB35D0039B9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA68207F9AAF0061038A /* Assets.xcassets */; };
-		7E45BE5F207FB4130039B9D1 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */; };
 		7EACFA62207F9AAD0061038A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA61207F9AAD0061038A /* AppDelegate.swift */; };
 		7EACFA64207F9AAD0061038A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EACFA63207F9AAD0061038A /* ViewController.swift */; };
 		7EACFA67207F9AAD0061038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EACFA65207F9AAD0061038A /* Main.storyboard */; };
@@ -103,7 +100,6 @@
 		7E2A343120812EF100B8BA40 /* NGSingleTimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGSingleTimerInterfaceController.swift; sourceTree = "<group>"; };
 		7E45BE53207FA5860039B9D1 /* Timers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Timers.json; sourceTree = "<group>"; };
 		7E45BE56207FA6160039B9D1 /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
-		7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
 		7EACFA5E207F9AAD0061038A /* Nag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EACFA61207F9AAD0061038A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EACFA63207F9AAD0061038A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -194,7 +190,6 @@
 		7EACFA55207F9AAD0061038A = {
 			isa = PBXGroup;
 			children = (
-				7E45BE5B207FA8D70039B9D1 /* Logo@2x.png */,
 				7E45BE52207FA55F0039B9D1 /* Shared */,
 				7EACFA60207F9AAD0061038A /* Nag */,
 				7EACFA75207F9AAF0061038A /* NagTests */,
@@ -442,7 +437,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFA6C207F9AAF0061038A /* LaunchScreen.storyboard in Resources */,
-				7E45BE5C207FA8D70039B9D1 /* Logo@2x.png in Resources */,
 				7EACFA69207F9AAF0061038A /* Assets.xcassets in Resources */,
 				7E45BE54207FA5860039B9D1 /* Timers.json in Resources */,
 				7EACFA67207F9AAD0061038A /* Main.storyboard in Resources */,
@@ -468,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFA8F207F9AB00061038A /* Assets.xcassets in Resources */,
-				7E45BE5F207FB4130039B9D1 /* Logo@2x.png in Resources */,
 				7EACFA8D207F9AAF0061038A /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +471,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EACFAA3207F9AB00061038A /* Assets.xcassets in Resources */,
-				7E45BE5D207FA8D70039B9D1 /* Logo@2x.png in Resources */,
 				7E45BE5E207FB35D0039B9D1 /* Assets.xcassets in Resources */,
 				7E45BE55207FA5F40039B9D1 /* Timers.json in Resources */,
 			);
@@ -776,7 +768,11 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Nag WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -794,7 +790,11 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Nag WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -849,7 +849,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JTTKNW75MR;
 				INFOPLIST_FILE = Nag/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -865,7 +868,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JTTKNW75MR;
 				INFOPLIST_FILE = Nag/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.Nag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -880,7 +886,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NagTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -896,7 +906,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NagTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -911,7 +925,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NagUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -926,7 +944,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NagUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ravidvinc.NagUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
