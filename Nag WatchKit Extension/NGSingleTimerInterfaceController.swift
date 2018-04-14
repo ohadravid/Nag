@@ -43,7 +43,8 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
     @IBOutlet var timerTimeRemaining: WKInterfaceLabel!
     @IBOutlet var timerButton: WKInterfaceButton!
     @IBOutlet var timerButtonBackground: WKInterfaceGroup!
-
+    @IBOutlet var timerTapRecognizer: WKTapGestureRecognizer!
+    
     var timer: NGTimer? {
         didSet {
             guard let timer = timer else { return }
@@ -76,6 +77,10 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
 
     func buttonClicked() {
         pauseResumePressed()
+    }
+    
+    @IBAction func doubleTap(_ sender: Any) {
+        // TODO: Reset timer.
     }
     
     var internalTimer : Timer?  //internal timer to keep track
@@ -120,8 +125,6 @@ class NGSingleTimerInterfaceController: WKInterfaceController {
             timerButtonBackground.setBackgroundColor(PAUSED_COLOR)
         }
     }
-    
-    
     
     func updateTimerText() {
         guard let timer = timer else { return }

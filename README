@@ -1,0 +1,13 @@
+https://www.raywenderlich.com/170177/watchos-4-tutorial-part-1-getting-started
+
+https://github.com/malcommac/SwiftDate
+
+Install CocoaPods
+```
+sudo gem install cocoapods
+```
+
+
+```
+pod install
+```

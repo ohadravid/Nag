@@ -89,7 +89,11 @@
                                 </button>
                             </items>
                             <gestureRecognizers>
-                                <tapGestureRecognizer id="Fs3-Fs-7B1"/>
+                                <tapGestureRecognizer numberOfTapsRequired="2" id="Fs3-Fs-7B1">
+                                    <connections>
+                                        <action selector="doubleTap:" destination="Zjq-I9-d6w" id="zeC-S8-agi"/>
+                                    </connections>
+                                </tapGestureRecognizer>
                                 <longPressGestureRecognizer id="pvb-dT-Qis"/>
                             </gestureRecognizers>
                         </group>
@@ -98,6 +102,7 @@
                         <outlet property="timerButton" destination="wMk-cm-s0N" id="xyU-5A-xax"/>
                         <outlet property="timerButtonBackground" destination="jNp-cD-ZcD" id="eMA-aR-oDm"/>
                         <outlet property="timerName" destination="mfM-XM-40a" id="YdV-zC-2mE"/>
+                        <outlet property="timerTapRecognizer" destination="Fs3-Fs-7B1" id="j7A-Qz-cnA"/>
                         <outlet property="timerTimeRemaining" destination="WuP-Zp-KCF" id="cZI-my-zUb"/>
                     </connections>
                 </controller>
